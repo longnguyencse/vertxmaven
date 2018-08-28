@@ -1,5 +1,6 @@
 package dev.at.mikorn.com;
 
+import dev.at.mikorn.com.debug.Runner;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
 
@@ -24,5 +25,8 @@ public class App extends AbstractVerticle {
 
     public static void main(String[] args) {
 //        Run
+//        mvn clean package
+        // java -jar target/my-first-app-1.0-SNAPSHOT-fat.jar
+        Runner.runExample(App.class);
     }
 }
